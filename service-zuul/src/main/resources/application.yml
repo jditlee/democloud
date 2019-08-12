@@ -1,0 +1,24 @@
+server:
+  port: 8766
+spring:
+  application:
+    name: service-zuul
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+zuul:
+  routes:
+    api-a:
+      path: /api-a/**
+      serviceId: service-ribbon
+    api-b:
+      path: /api-b/**
+      serviceId: service-feign
+
+#ribbon加载延迟，这里修改设置一下时间，默认是1s
+#有bug
+#ribbon:
+#  ReadTimeout: 3000
+#  SocketTimeout: 3000
