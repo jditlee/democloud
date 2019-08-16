@@ -9,11 +9,11 @@
     </parent>
 
     <groupId>com.lingyunxin</groupId>
-    <artifactId>eureka-cli</artifactId>
+    <artifactId>service_zipkin2</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>eureka-cli</name>
+    <name>service_zipkin2</name>
     <description>Demo project for Spring Boot</description>
 
 
@@ -25,13 +25,11 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <artifactId>spring-cloud-starter-zipkin</artifactId>
         </dependency>
 
 
     </dependencies>
-
-
 
 
 
